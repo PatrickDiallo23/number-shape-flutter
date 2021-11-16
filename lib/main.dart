@@ -3,7 +3,9 @@ import 'package:flutter/material.dart';
 bool isSquare(int number) {
   if (number > 0) {
     for (int i = 1; i * i <= number; i++) {
-      if (number % i == 0 && number / i == i) return true;
+      if (number % i == 0 && number / i == i) {
+        return true;
+      }
     }
     return false;
   } else
